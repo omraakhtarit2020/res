@@ -1,0 +1,293 @@
+ body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: black;
+    display: flex; 
+   
+} 
+ /* .container{
+    /* position: relative;
+    width: 100%;
+    max-width: 10000px;
+    min-height: 100px;
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr; }*/
+
+.container .left-side{
+     position: relative; 
+    /* margin-right: 6rem; */
+    background: rgba(5, 157, 168, 0.842);
+    padding: 40px;
+}
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px ;
+    border-bottom: 1px solid black;
+}
+.profiletext .profilepic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .profilepic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+.profiletext h2 span{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.navbar ul li{
+    padding: 15px;
+    list-style: none;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.navbar ul li a .fas{
+  width: 25px;
+}
+.navbar ul li:hover{
+    background: whitesmoke;
+    transition: background 0.2ms;
+    color: rgba(3, 167, 231, 0.822);
+}
+ .navbar ul li a:hover{
+    color: rgba(3, 167, 231, 0.822);
+   
+} 
+.home{
+     padding: 0 15rem;
+    
+}
+.home h3{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+.home h2{
+    font-size: 3.4rem;
+    color: whitesmoke;
+}
+.home h2 span{
+    color: rgba(5, 157, 168, 0.842);
+}
+.about{
+    padding-top:5rem ;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+}
+.about .row .info{
+    padding-left: 3rem;
+    padding: 0 10rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color:rgba(5, 157, 168, 0.842);
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: #fff;
+}
+.heading{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* .main-container .item{
+    background:(0, 0, 0, 0.315);
+    padding: 50px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid white;
+} */
+.main-container .item:nth-child(2n)
+{
+    background-color: rgb(0, 0, 0);
+    border-bottom:  2px solid rgba(47, 169, 240, 0.87);
+}
+.main-container .item:nth-child(2n+1)
+{
+    background-color: rgba(0, 0, 0, 0.014);
+    border-bottom:  2px solid rgba(47, 169, 240, 0.87);
+}
+.skills{
+    padding:4rem ;
+    color: whitesmoke;
+    padding: 0 10rem;
+    padding-bottom: 40px;
+}
+.skills .skill-progress{
+    height: 1.7rem;
+    width: 39rem;
+    border-radius: 0.8rem;
+    background-color: silver;
+    margin-bottom: 20px;  
+}
+.skill-progress>div{
+    border-radius:20px 0px 0px 20px ;
+}
+#html{
+    height: inherit;
+    width: 85%;
+    background-color: teal;
+}
+#html span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: cursive;
+}
+#css{
+    height: inherit;
+    width: 35%;
+    background-color: lightcoral;
+}
+#css span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: cursive;
+}
+#java{
+    height: inherit;
+    width: 40%;
+    background-color: rgb(163, 253, 74);
+}
+#java span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: cursive;
+}
+#c{
+    height: inherit;
+    width: 75%;
+    background-color: rgb(82, 146, 230);
+}
+#c span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: cursive;
+}
+#python{
+    height: inherit;
+    width: 60%;
+    background-color: rgb(238, 198, 20);
+}
+#python span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: cursive;
+}
+.edu h1{
+    padding-bottom:4rem ;
+    color: whitesmoke;
+}
+.edu-container{
+    position: relative;
+    width: 85%;
+}
+.box{
+    min-height: 150px;
+    width: 40%;
+    position: relative;
+    left: 10%;
+}
+.box:nth-child(2n){
+    background-color: rgb(0, 0, 0);
+    left: 60%;
+}
+.box:nth-child(2n+1){
+    background-color: rgba(14, 13, 13, 0);
+}
+.divider{
+    position: absolute;
+     height: 400px;
+    width: 0;
+    border: 2px dashed wheat;
+    left: 55%;
+    bottom: 5%;
+}
+#edu-box{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(19, 130, 221);
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: -2rem;
+}
+#date{
+    margin-top:-20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(19, 130, 221);
+}
+p{
+    color: whitesmoke;
+    font-family: monospace;
+    font-weight: 300;
+}
+.details ul li{
+        list-style: none;
+        margin-left: 280px;
+        margin-bottom: 50px;
+}
+.details ul li a{
+    text-decoration: none;
+    color: rgb(19, 130, 221);
+}
+.details ul li a:hover{
+    color: white;
+}
+.icon{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 400px;
+
+}
+.icon li
+{
+    display: inline-block;
+    margin: 0px 15px 10px 0px;
+    
+}
+.icon li a{
+    text-decoration: none;
+}
+.icon li a:hover{
+       color: rgb(49, 207, 9);
+}
